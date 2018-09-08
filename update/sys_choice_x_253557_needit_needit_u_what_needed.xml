@@ -153,13 +153,32 @@
             <sys_updated_on>2018-09-05 14:56:25</sys_updated_on>
             <value>cs2</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_what_needed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_253557_needit_needit</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-09-07 13:52:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>439b15970fd023009dbd85bce1050efd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:57:16</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_what_needed</element>
             <name>x_253557_needit_needit</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2018-09-05 14:56:25</sys_created_on>
-            <sys_id>c61793e60f98a3009dbd85bce1050e12</sys_id>
+            <sys_id>cebd32fa0f50e3009dbd85bce1050ecf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>u_what_needed</sys_name>
             <sys_package display_value="NeedIt" source="x_253557_needit">4f31f4160f5c63009dbd85bce1050ea3</sys_package>

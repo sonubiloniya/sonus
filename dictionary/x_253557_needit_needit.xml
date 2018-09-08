@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_253557_needit_needit" sizeclass="3" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_253557_needit_needit" sizeclass="9" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="other" max_length="40" name="u_other" type="string"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element label="Human Resources" sequence="0" value="hr"/>
                 <element label="Facilities" sequence="1" value="facilities"/>
-                <element label="Computer Science" sequence="3" value="cs"/>
+                <element label="Computer Science" sequence="2" value="cs"/>
+                <element label="Legal" sequence="3" value="legal"/>
+                <element label="other" sequence="4" value="other"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
@@ -19,6 +22,7 @@
                 <element label="Legal 2" sequence="5" value="legal2"/>
                 <element label="Computer Science 1" sequence="6" value="cs1"/>
                 <element label="Computer Science 2" sequence="7" value="cs2"/>
+                <element label="Other" sequence="8" value="other"/>
             </choice>
         </element>
         <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
